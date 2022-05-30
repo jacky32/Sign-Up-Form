@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-Up Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="left-side">
+    <div class="logo">
+      <img src="cards-spade-outline.svg" alt="logo">
+      <p>Sign-Up Form</p>
+    </div>
+    <div class="credits">
+      <p>Photo by <a href="https://unsplash.com/@fjones">Fabian Jones</a> on <a href="https://unsplash.com/photos/HWe3f8xIJq0">Unsplash</a></p>
+    </div>
+  </div>
+  <div class="right-side">
+    <div class="upper-message">
+
+    </div>
+    <form action="http://httpbin.org/post" method="post" id="signup_form">
+      <label for="first_name">First name</label>
+      <input type="text" name="first_name" id="first_name">
+      <label for="last_name">Last name</label>
+      <input type="text" name="last_name" id="last_name">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email">
+      <label for="phone_number">Phone number</label>
+      <input type="tel" name="phone_number" id="phone_number">
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password">
+      <label for="password_confirmation">Confirm password</label>
+      <input type="password" name="password_confirmation" id="password_confirmation">
+    </form>
+    <div class="bottom-message">
+      <button type="submit" form="signup_form">Create account</button>
+      <p>Already have an account? <b>Log in</b></p>
+    </div>
+  </div>
+</body>
+</html>

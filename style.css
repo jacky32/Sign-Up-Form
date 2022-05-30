@@ -1,0 +1,59 @@
+body {
+  margin:0;
+  display:flex;
+  height:100vh;
+}
+
+/* LEFT SIDE */
+
+.left-side {
+  --left-width: 33vw;
+
+  background-image: url("background.jpg");
+  min-width: var(--left-width);
+}
+
+.logo {
+  width: var(--left-width);
+  height: 200px;
+  background-color: rgba(238, 238, 238, 0.548);
+  position: absolute;
+  top: 22%;
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  height:80px;
+  padding:8px;
+}
+
+.logo p {
+  font-size: 36px;
+  max-width: 50%;
+}
+
+.credits {
+  position: absolute;
+  bottom: 5px;
+  color: white;
+  width: var(--left-width);
+  text-align: center;
+}
+
+.credits a:link, 
+.credits a:visited {
+  color: white;
+}
+
+.credits a:hover {
+  color: lightgrey;
+}
+
+.credits a:active {
+  color: grey;
+}
+
+/* RIGHT SIDE */
