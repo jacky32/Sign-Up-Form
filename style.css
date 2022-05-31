@@ -125,7 +125,7 @@ input + span {
   position: relative;
 }
 
-input:invalid:not(:placeholder-shown) + span::after {
+input:invalid:not(:placeholder-shown):not(.error) + span::after {
   font-size: 0.75rem;
   position: absolute;
   content: "Invalid input";
