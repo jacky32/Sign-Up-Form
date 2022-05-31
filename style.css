@@ -2,6 +2,7 @@ body {
   margin:0;
   display:flex;
   height:100vh;
+  font-family: 'Tiro Gurmukhi', serif;
 }
 
 /* LEFT SIDE */
@@ -70,7 +71,8 @@ body {
 
 .upper-message {
   margin-left: 50px;
-  max-width: 36vw;
+  max-width: 33vw;
+  font-size: 1.2rem;
 }
 
 form {
@@ -133,6 +135,22 @@ input:invalid:not(:placeholder-shown) + span::after {
   right:0;
   top:2px;
 }
+
+.error {
+  outline: 1px solid red;
+}
+
+.error + span::after {
+  font-size: 0.75rem;
+  position: absolute;
+  content: "Passwords don't match";
+  color: white;
+  background-color: darkblue;
+  padding: 4px 8px;
+  right:0;
+  top:2px;
+}
+
 
 .bottom-message {
   margin: 20px 0 0 50px;
